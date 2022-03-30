@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    text-align: center;
+    padding: 10px 0;
+
+    background-color: bisque;
+
+    font-size: 32px;
+}
+
+content {
+    background-color: gold;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.nav__button {
+    margin: 10px;
+}
+
+.catalog {
+
+    width: 100%;
+    /* width: 70%; */
+    background-color: aqua;
+}
+
+#category_name {
+    text-align: center;
+    margin: 10px;
+}
+
+#products_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 20%;
+    padding: 4px;
+    margin-bottom: 10px;
+
+    /* width: 150px; */
+    /* height: 150px; */
+
+    text-align: center;
+    border: 2px solid grey;
+    /* padding: 10px; */
+    /* margin-bottom: 10px; */
+}
+.product img {
+    width: 100%;
+    height: 100%;
+}
+.product__name {
+    margin-top: 10px;
+}
+.product__price::before {
+    content: "Price: ";
+}
+.product__price::after {
+    content: " ₽";
+}
+
+footer {
+    margin-top: 10px;
+    text-align: center;
+    border-top: solid;
+    padding-bottom: 15px;
+    padding-top: 10px;
+}
+
+footer .copyright-img {
+    display: inline;
+    width: 1rem;
+    height: 1rem;
+}
+
+
+/* tablet */
+@media screen and (min-width: 451px) and (max-width: 1024px) {
+    content {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        background-color: darkred;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .nav__button {
+        width: 400px;
+        height: 50px;
+    }
+
+}

@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <script src="shop.js"></script>
+    <link href="shop.css" rel="stylesheet">
+</head>
+
+<body onload="redraw_catalog()">
+    <header>
+        Наше меню
+    </header>
+
+    <content>
+        <nav>
+            <button id="soups" class="nav__button" onclick="change_category(this)">Супы</button>
+            <button id="drinks" class="nav__button" onclick="change_category(this)">Напитки</button>
+            <button id="desserts" class="nav__button" onclick="change_category(this)">Десерты</button>
+            <button id="salads" class="nav__button" onclick="change_category(this)">Салаты</button>
+        </nav>
+        <div class="catalog">
+            <h1 id="category_name">Супы</h1>
+
+            <div id="products_list">
+                <div class="product">
+                    <img src="noimg">
+                    <div class="product__name">Example</div>
+                    <div class="product__price">90</div>
+                </div>
+            </div>
+        </div>
+    </content>
+
+    <footer>
+        <img class="copyright-img" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Copyleft.svg?uselang=ru">
+        All rights reversed. 2021
+        <br>
+        Mail: <a href="mailto:sev.20@uni-dubna.ru">sev.20 at uni-dubna ru</a>
+    </footer>
+
+</body>
