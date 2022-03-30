@@ -1,0 +1,26 @@
+.black {
+    background-color: black;
+}
+.white {
+    background-color: silver;
+}
+
+.chess-board {
+    border-spacing: 0;
+    /* border-collapse: collapse; */
+}
+.chess-board th {
+    padding: 0.5em;
+}
+.chess-board td {
+    --cell-size: 75px;
+    width: var(--cell-size);
+    height: var(--cell-size);
+
+    border: 1px solid;
+    text-align: center;
+    /* vertical-align: middle; */
+
+    font-size: 2.5em;
+}
+

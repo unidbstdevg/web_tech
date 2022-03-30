@@ -118,14 +118,9 @@
 <button onclick="test_arrays();">Test array</button>
 
 <h1>Задание 5</h1>
-<script>
-    function create_chess() {
-        var c = document.getElementById("chess_board");
-        c.innerHTML = "";
-        var n = document.createElement("div");
-        n.innerText = "asdf";
-        c.append(n);
-    }
-</script>
+<!-- With help of this source: http://blog.kislenko.net/show.php?id=2079 -->
+<link href="chess.css" rel="stylesheet">
+<script src="chess.js"></script>
+
 <button onclick="create_chess();">Create chess board</button>
 <div id="chess_board"></div>
