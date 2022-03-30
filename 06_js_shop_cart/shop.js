@@ -157,6 +157,16 @@ function cartIncById(id) {
     redrawCatalogAndCart();
 }
 
+function cartClear() {
+    for(cart_item of cart) {
+        var catalog_item = findItemInCatalog(cart_item.id);
+        catalog_item.count += cart_item.count;
+    }
+    cart = [];
+
+    redrawCatalogAndCart();
+}
+
 // helper functions
 function findItemInCatalog(id) {
     for (item of catalog) {

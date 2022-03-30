@@ -13,6 +13,9 @@ body {
 .cart-block {
     background-color: antiquewhite;
     width: 40%;
+
+    display: flex;
+    flex-direction: column;
 }
 h1 {
     text-align: center;
@@ -51,3 +54,4 @@ h1 {
 #cart .product .count::before {
     content: "Count: ";
 }
+
