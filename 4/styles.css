@@ -1,5 +1,5 @@
 :root {
-    --orange-color: #F16D7F;
+    --pink-color: #F16D7F;
     --white-color: #FBFBFB;
     --black-color: #222222;
 }
@@ -39,7 +39,7 @@ header {
     fill: #E8E8E8;
 }
 .header__box svg:hover {
-    fill: var(--orange-color);
+    fill: var(--pink-color);
 }
 
 .logo {
@@ -63,7 +63,7 @@ header {
     justify-content: center;
 }
 .logo__title__text {
-    border-left: solid 12px var(--orange-color);
+    border-left: solid 12px var(--pink-color);
     padding-left: 16px;
 }
 .logo__title__text h1 {
@@ -75,8 +75,64 @@ header {
     font-size: 32px;
 }
 #fashion_word {
-    color: var(--orange-color);
+    color: var(--pink-color);
 }
+
+main {
+    background-color: white;
+}
+
+.offer {
+    width: 85%;
+    margin: 65px auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.offer h3 {
+    text-align: center;
+
+    font-size: 16px;
+    color: white;
+    line-height: 19px;
+    font-weight: 400;
+}
+.offer h2 {
+    text-align: center;
+
+    font-size: 24px;
+    color: var(--pink-color);
+    line-height: 29px;
+    font-weight: 700;
+}
+.offer__item {
+    background-repeat: no-repeat;
+    margin: 15px 0;
+
+    width: 360px;
+    height: 260px;
+
+    flex-basis: 32%;
+}
+.offer__item > div {
+    background-color: rgba(33, 22, 22, 0.7);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.offer__item:last-child {
+    flex-basis: 100%;
+    height: 180px;
+}
+#offer_1 { background-image: url("images/offer_1.png"); }
+#offer_2 { background-image: url("images/offer_2.png"); }
+#offer_3 { background-image: url("images/offer_3.png"); }
+#offer_4 { background-image: url("images/offer_4.png"); }
 
 .adv {
     background-color: var(--black-color);
@@ -229,7 +285,7 @@ footer {
     fill: black;
 }
 .footer__box svg:hover {
-    background-color: var(--orange-color);
+    background-color: var(--pink-color);
     fill: white;
 }
 
