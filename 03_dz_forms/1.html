@@ -3,35 +3,36 @@
     <head>
         <meta charset="UTF-8">
         <link href="1.css" rel="stylesheet">
+        <script src="1.js"></script>
         <title>Asd</title>
     </head>
     <body>
-        <form>
+        <form id="myform" target="_blank">
             <img src="images/1.png">
             <div class="form-content">
                 <fieldset class="user_data">
                     <label>
                         <span class="desc">first name</span>
-                        <input type="text" placeholder="John">
+                        <input id="f_fname" type="text" placeholder="John" name="fname">
                     </label>
                     <label>
                         <span class="desc">last name</span>
-                        <input type="text" placeholder="Smith">
+                        <input id="f_lname" type="text" placeholder="Smith" name="lname">
                     </label>
                     <label>
                         <span class="desc" id="email_desc">email</span>
-                        <input type="text" placeholder="john.smith@gmail.com">
+                        <input id="f_email" type="text" placeholder="john.smith@gmail.com" name="email">
                     </label>
                 </fieldset>
                 <hr>
                 <fieldset>
                     <label class="comments">
                         <span class="desc">comments</span>
-                        <textarea type="textarea"></textarea>
+                        <textarea id="f_comments" type="textarea" name="comments"></textarea>
                     </label>
                 </fieldset>
                 <fieldset class="submit">
-                    <input type="submit" value="SUBMIT">
+                    <input type="submit" value="SUBMIT" onclick="return submit_click();">
                     <span>or press enter</span>
                 </fieldset>
             </div>
