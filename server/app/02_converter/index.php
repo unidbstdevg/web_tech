@@ -16,26 +16,28 @@ $IN_RUB["ETH"] = 331760.62;
     </head>
     <body>
         <form>
-            <input onfocus="this.value=''" list="cur_from" name="cur_from" value="<?php print(isset($_GET["cur_from"]) ? $_GET["cur_from"] : "RUB") ?>">
-            <datalist id="cur_from">
-                <option value="RUB"></option>
-                <option value="USD"></option>
-                <option value="UAH"></option>
-                <option value="Satoshi"></option>
-                <option value="ETH"></option>
-            </datalist>
-            <span>--&gt;</span>
-            <input onfocus="this.value=''" list="cur_to" name="cur_to" value="<?php print(isset($_GET["cur_to"]) ? $_GET["cur_to"] : "UAH") ?>">
-            <datalist id="cur_to">
-                <option value="RUB"></option>
-                <option value="USD"></option>
-                <option value="UAH"></option>
-                <option value="Satoshi"></option>
-                <option value="ETH"></option>
-            </datalist>
-            <p><span>Amount: </span><input type="text" name="amount" value="<?php print(isset($_GET["amount"]) ? $_GET["amount"] : "") ?>"></p>
+            <div>
+                <input onfocus="this.value=''" list="cur_from" name="cur_from" value="<?php print(isset($_GET["cur_from"]) ? $_GET["cur_from"] : "RUB") ?>">
+                <datalist id="cur_from">
+                    <option value="RUB"></option>
+                    <option value="USD"></option>
+                    <option value="UAH"></option>
+                    <option value="Satoshi"></option>
+                    <option value="ETH"></option>
+                </datalist>
+                <span>--&gt;</span>
+                <input onfocus="this.value=''" list="cur_to" name="cur_to" value="<?php print(isset($_GET["cur_to"]) ? $_GET["cur_to"] : "UAH") ?>">
+                <datalist id="cur_to">
+                    <option value="RUB"></option>
+                    <option value="USD"></option>
+                    <option value="UAH"></option>
+                    <option value="Satoshi"></option>
+                    <option value="ETH"></option>
+                </datalist>
+            </div>
+            <p id="amount_sect"><span>Amount: </span><input type="text" name="amount" value="<?php print(isset($_GET["amount"]) ? $_GET["amount"] : "") ?>"></p>
 
-            <p><input type="submit" value="Convert"></p>
+            <div id="subm_btn"><input  type="submit" value="Convert"></div>
         </form>
         <div class="result">
 <?php

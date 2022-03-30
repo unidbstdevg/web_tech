@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+}
+
+body {
+    margin-top: 20px;
+
+    background-color: blanchedalmond;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#amount_sect {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
