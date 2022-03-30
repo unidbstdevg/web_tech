@@ -1,5 +1,7 @@
 :root {
     --orange-color: #F16D7F;
+    --white-color: #FBFBFB;
+    --black-color: #222222;
 }
 
 * {
@@ -15,7 +17,7 @@ body {
 }
 
 header {
-    background-color: #222222;
+    background-color: var(--black-color);
     height: 75px;
 }
 .header__box {
@@ -28,9 +30,12 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-.header__box img,
+.header__box img {
+    /* 8 = 41 - 33*/
+    margin-right: 8px;
+}
 .header__box svg {
-    padding: 10px 20px;
+    margin-left: 33px;
     fill: #E8E8E8;
 }
 
@@ -42,7 +47,7 @@ header {
 .logo__title {
     margin-left: 100px;
 
-    color: #222222;
+    color: var(--black-color);
 
     display: flex;
     flex-flow: column wrap;
@@ -82,6 +87,5 @@ header {
 
 
 svg:hover {
-    fill: white;
     fill: var(--orange-color);
 }
