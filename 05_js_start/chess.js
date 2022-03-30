@@ -28,6 +28,7 @@ function create_header_line() {
     return line;
 }
 
+const LETTERS_DICT = ["a", "b", "c", "d", "e", "f", "g", "h"];
 function create_line(number) {
     let line = document.createElement("tr");
 
@@ -37,6 +38,8 @@ function create_line(number) {
 
     for(let i = 0; i < SIZE; i++) {
         let cell = document.createElement("td");
+
+        cell.innerText = LETTERS_DICT[i] + number;
 
         if(number % 2 == 0) {
             if(i % 2 != 0)
