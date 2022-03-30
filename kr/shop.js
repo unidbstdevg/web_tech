@@ -12,8 +12,17 @@ var catalog = {
         { name: "Пиво", price: 30, image: img_url, },
         { name: "Вода из под крана", price: 30, image: img_url, },
     ],
-    "desserts": [],
-    "salads": [],
+    "desserts": [
+        { name: "Сахара", price: 30, image: img_url, },
+        { name: "Мороженое", price: 93, image: img_url, },
+        { name: "Топлёное", price: 100, image: img_url, },
+        { name: "Последнее", price: 54, image: img_url, },
+    ],
+    "salads": [
+        { name: "Крабовый", price: 60, image: img_url, },
+        { name: "Оливье", price: 39, image: img_url, },
+        { name: "Деревенский", price: 25, image: img_url, },
+    ],
 };
 var current_category = "soups";
 
