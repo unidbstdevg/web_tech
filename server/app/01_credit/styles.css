@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+th {
+    color: white;
+}
+
+/* header */
+tr th {
+    background-color: blue;
+}
+
+tr:nth-child(odd) {
+    background-color: red;
+}
+tr:nth-child(even) {
+    background-color: yellow;
+}
