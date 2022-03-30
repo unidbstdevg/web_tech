@@ -1,0 +1,160 @@
+body {
+    font-family: "Tahoma";
+    background: gray;
+    text-align: center;
+    padding-left: 175px;
+    padding-right: 175px;
+}
+header {
+    font-size: 45px;
+    border-top: solid;
+    border-bottom: solid;
+    /* border-radius: 35%; */
+    border-top-left-radius: 60%;
+    border-bottom-right-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 60%;
+    border-color: #6600AA;
+}
+
+header img#hat {
+    width: 60px;
+    height: 50px;
+    transform: translate(39px, -7px) rotate(-29deg);
+}
+
+.zodiac-name {
+    color: #992200;
+}
+
+nav {
+    margin-top: 10px;
+    word-spacing: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid;
+}
+
+nav .multi-item {
+    word-spacing: 0px;
+}
+
+nav .multi-item:after {
+    margin-left: 20px;
+    content: "";
+}
+
+nav .outlink {
+    color: cornsilk;
+}
+
+h1 {
+    color: yellowgreen;
+}
+h2 {
+    text-align: center;
+}
+
+main p {
+    text-indent: 30px;
+    text-align: left;
+    font-size: 18px;
+}
+
+section {
+    width: 90%;
+    background: lightseagreen;
+    min-height: 200px;
+    margin: 0 auto;
+}
+
+.v1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 10;
+}
+
+.v2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-grow: 10;
+}
+
+main section .v1 img {
+    width: 200px;
+    height: 200px;
+    border: 4px solid lightsteelblue;
+}
+
+main section .v2 img {
+    margin: 0 200px;
+    width: 200px;
+    height: 200px;
+    border: 4px solid lightsteelblue;
+}
+
+main section figcaption {
+    color: navajowhite;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: "> ";
+    list-style-position: inside;
+}
+
+li {
+    text-indent: 30px;
+    text-align: left;
+    font-size: 18px;
+}
+#lorem {
+    color: blue;
+    background-color: khaki;
+    border-top: solid;
+    border-bottom: solid;
+    border-top-color: blue;
+    border-bottom-color: yellow;
+    border-width: 20px;
+    border-radius: 20px;
+    font-size: 30px;
+    padding-left: 200px;
+    padding-right: 100px;
+    transform: rotate(2deg);
+}
+
+footer {
+    border-top: solid;
+    padding-bottom: 25px;
+    padding-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    text-decoration-line: none;
+    color: #2D572C;
+}
+
+span#inline-ad {
+    color: #6600FF;
+}
+
+span#strike-amuleti {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+footer .copyright-img {
+    display: inline;
+    width: 1rem;
+    height: 1rem;
+}
+
+/* img:after { */
+/*     con */
+/* } */
+
