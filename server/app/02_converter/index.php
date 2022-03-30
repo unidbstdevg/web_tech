@@ -39,30 +39,27 @@ $IN_RUB["ETH"] = 331760.62;
         </form>
         <div class="result">
 <?php
-if (isset($_GET["cur_from"]) && isset($_GET["cur_to"]) && isset($_GET["amount"])) {
-    $cur_from = $_GET["cur_from"];
-    $cur_to = $_GET["cur_to"];
-    if(!isset($IN_RUB[$cur_from]) || !isset($IN_RUB[$cur_to])) {
-        print("Invalid currencies");
-        return;
-    }
-
-    $amount = $_GET["amount"];
-    if(!is_numeric($amount)) {
-        printf("Invalid amount: %s", $amount);
-        return;
-    }
-
-    /* check that currencies is valid */
-    if(!isset($IN_RUB[$cur_from]) || !isset($IN_RUB[$cur_to])) {
-        print("Wrong currency!");
-    } else {
-        $rubs = $amount * $IN_RUB[$cur_from];
-        $result = $rubs / $IN_RUB[$cur_to];
-
-        printf("%s %s in %s = %s", $amount, $cur_from, $cur_to, round($result, 2));
-    }
+if (!isset($_GET["cur_from"]) || !isset($_GET["cur_to"]) || !isset($_GET["amount"])) {
+    return;
 }
+
+$cur_from = $_GET["cur_from"];
+$cur_to = $_GET["cur_to"];
+if(!isset($IN_RUB[$cur_from]) || !isset($IN_RUB[$cur_to])) {
+    print("Invalid currencies");
+    return;
+}
+
+$amount = $_GET["amount"];
+if(!is_numeric($amount)) {
+    printf("Invalid amount: %s", $amount);
+    return;
+}
+
+$rubs = $amount * $IN_RUB[$cur_from];
+$result = $rubs / $IN_RUB[$cur_to];
+
+printf("%s %s in %s = %s", $amount, $cur_from, $cur_to, round($result, 2));
 ?>
         </div>
     </body>
