@@ -17,6 +17,9 @@ if(isset($_REQUEST["target_id"])) {
     $s = "UPDATE book SET title = '".$title."', author = '".$author."', price = '".$price."', pages = '".$pages."', id_izdat = '".$id_izdat."' WHERE id_book = ".$target_id;
     print($s);
     mysqli_query($con, $s);
+
+    file_put_contents("log.txt", $_SESSION["name"] . " has updated book with id = " . $target_id . "\n", FILE_APPEND);
+
     header("Location: ../");
 }
 

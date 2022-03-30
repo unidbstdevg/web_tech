@@ -17,6 +17,9 @@ if(isset($_REQUEST["send"])) {
     print($s);
 
     mysqli_query($con, $s);
+
+    file_put_contents("log.txt", $_SESSION["name"] . " has inserted book " . $title . " - " . $author . "\n", FILE_APPEND);
+
     header("Location: ../");
 }
 ?>
