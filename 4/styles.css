@@ -47,13 +47,19 @@ header {
     display: flex;
     flex-direction: row;
 }
+.logo__img {
+    background: url('images/logo_man.png') no-repeat;
+    background-size: cover;
+    height: 764px;
+    width: 800px;
+}
 .logo__title {
     margin-left: 100px;
 
     color: var(--black-color);
 
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: center;
 }
 .logo__title__box {
