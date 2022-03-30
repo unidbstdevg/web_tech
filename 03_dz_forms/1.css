@@ -44,6 +44,8 @@ fieldset.user_data {
 label textarea {
     width: 350px;
     height: 50%;
+
+    resize: none;
 }
 .comments {
     height: 100px;
