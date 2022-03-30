@@ -1,3 +1,7 @@
+:root {
+    --orange-color: #F16D7F;
+}
+
 * {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -30,7 +34,43 @@ header {
     fill: #E8E8E8;
 }
 
+.logo {
+    background-color: #F1E4E6;
+    display: flex;
+    flex-direction: row;
+}
+.logo__title {
+    margin-left: 100px;
 
+    color: #222222;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.logo__title__box {
+    display: flex;
+    flex-direction: row;
+}
+.logo__title__box__vertline {
+    margin-right: 16px;
+
+    display: inline-block;
+    width: 12px;
+    height: 92px;
+    background-color: var(--orange-color);
+}
+.logo__title__box__text h1 {
+    font-weight: 900;
+    font-size: 48px;
+}
+.logo__title__box__text h2 {
+    font-weight: 500;
+    font-size: 32px;
+}
+#fashion_word {
+    color: var(--orange-color);
+}
 /* 
 .logo, .catalog, .adv {
     width: 85%;
@@ -39,7 +79,9 @@ header {
     margin: 0 auto;
 } */
 
+
+
 svg:hover {
     fill: white;
-    fill: #F16D7F;
+    fill: var(--orange-color);
 }
