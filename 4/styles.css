@@ -134,6 +134,80 @@ main {
 #offer_3 { background-image: url("images/offer_3.png"); }
 #offer_4 { background-image: url("images/offer_4.png"); }
 
+.products {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 95px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.products__title {
+    text-align: center;
+
+    margin-bottom: 48px;
+}
+.products__title h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+.products__title p {
+    font-size: 14px;
+    color: #9F9F9F;
+    line-height: 36px;
+}
+.products__box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.products__box__item {
+    background-color: #F8F8F8;
+
+    width: 360px;
+    margin-bottom: 30px;
+}
+.products__box__item__text {
+    margin-left: 18px;
+}
+.products__box__item__text__title {
+    margin-top: 25px;
+    margin-bottom: 12px;
+
+    font-size: 13px;
+    color: black;
+}
+.products__box__item__text__desc {
+    font-weight: 300;
+    color: #5D5D5D;
+    font-size: 14px;
+
+    margin-bottom: 18px;
+}
+.products__box__item__text__price {
+    color: var(--pink-color);
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+.products button {
+    border: 1px solid #FF6A6A;
+    background-color: white;
+    color: #F26376;
+    margin-top: 18px;
+
+    width: 211px;
+    height: 47px;
+}
+.products button:hover {
+    border: 1px solid white;
+    background-color: #F26376;
+    color: white;
+}
+
 .adv {
     background-color: var(--black-color);
     color: var(--white-color);
@@ -250,7 +324,7 @@ main {
     outline: none;
 }
 .sub__box__form__fields input[type=submit] {
-    background-color: #F16D7F;
+    background-color: var(--pink-color);
     font-size: 14px;
     color: white;
 
