@@ -1,8 +1,8 @@
 <?php
-require("db_connect.php");
+require("../db_connect.php");
 
-require("header.html");
-require("menu.html");
+require("../html_blocks/header.html");
+require("../html_blocks/menu.html");
 
 if(isset($_REQUEST["send"])) {
     $title = $_REQUEST["title"];
@@ -15,7 +15,7 @@ if(isset($_REQUEST["send"])) {
     print($s);
 
     mysqli_query($con, $s);
-    /* header("Location: ./"); */
+    header("Location: ../");
 
 }
 ?>
@@ -31,5 +31,5 @@ if(isset($_REQUEST["send"])) {
 </form>
 
 <?php
-require("footer.html");
+require("../html_blocks/footer.html");
 ?>

@@ -1,10 +1,9 @@
 <?php
-require("header.html");
-require("menu.html");
-?>
+require("../db_connect.php");
 
-<?php
-require("db_connect.php");
+require("../html_blocks/header.html");
+require("../html_blocks/menu.html");
+
 if(isset($_REQUEST["target_id"])) {
     $target_id = $_REQUEST["target_id"];
     $title = $_REQUEST["title"];
@@ -16,7 +15,7 @@ if(isset($_REQUEST["target_id"])) {
     $s = "UPDATE book SET title = '".$title."', author = '".$author."', price = '".$price."', pages = '".$pages."', id_izdat = '".$id_izdat."' WHERE id_book = ".$target_id;
     print($s);
     mysqli_query($con, $s);
-    exit();
+    header("Location: ../");
 }
 
 if(!isset($_REQUEST["id"])) {
@@ -40,9 +39,7 @@ print('<input type="text" name="pages" value="'.$asd[5].'" required>');
 print('<input type="text" name="id_izdat" value="'.$asd[6].'" required>');
 print('<input type="submit" value="Send" name="send">');
 print("</form>");
-?>
 
 
-<?php
-require("footer.html");
+require("../html_blocks/footer.html");
 ?>
