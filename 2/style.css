@@ -69,6 +69,11 @@ section .text {
     width: 80%;
 }
 
+section .date {
+    position: sticky;
+    bottom: 0px;
+}
+
 footer {
     margin-top: 10px;
     text-align: center;

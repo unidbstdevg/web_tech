@@ -1,0 +1,27 @@
+body {
+    background-color: antiquewhite;
+    font-size: 2em;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+legend {
+    color: brown;
+    font-weight: bolder;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=text], input[type=number] {
+    font-size: 1em;
+    padding: 10px;
+    box-sizing: border-box;
+    border-left: 3px solid goldenrod;
+    width: 200px;
+}
