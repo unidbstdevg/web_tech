@@ -202,3 +202,11 @@ footer {
     background-color: var(--orange-color);
     fill: white;
 }
+
+
+/* mobile */
+@media screen and (max-width: 450px) {
+    .sub__box {
+        flex-direction: column;
+    }
+}
