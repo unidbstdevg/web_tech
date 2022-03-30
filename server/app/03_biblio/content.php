@@ -21,6 +21,9 @@ while($row = mysqli_fetch_array($res)) {
     print("<td>");
     printf('<a href="delete.php?id=%s">delete</a>', $row[0]);
     print("</td>");
+    print("<td>");
+    printf('<a href="update.php?id=%s">update</a>', $row[0]);
+    print("</td>");
 
     print("</tr>");
 }
