@@ -1,4 +1,6 @@
 <?php
+require("../auth/check_auth.php");
+
 require("../db_connect.php");
 
 require("../html_blocks/header.html");
@@ -16,7 +18,6 @@ if(isset($_REQUEST["send"])) {
 
     mysqli_query($con, $s);
     header("Location: ../");
-
 }
 ?>
 

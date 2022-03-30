@@ -1,4 +1,6 @@
 <?php
+require("../auth/check_auth.php");
+
 require("../db_connect.php");
 
 $id = $_REQUEST["id"];
