@@ -16,7 +16,7 @@ $IN_RUB["ETH"] = 331760.62;
     </head>
     <body>
         <form>
-        <input  onfocus="this.value=''" list="cur_from" name="cur_from" value="<?php print(isset($_GET["cur_from"]) ? $_GET["cur_from"] : "RUB") ?>">
+            <input onfocus="this.value=''" list="cur_from" name="cur_from" value="<?php print(isset($_GET["cur_from"]) ? $_GET["cur_from"] : "RUB") ?>">
             <datalist id="cur_from">
                 <option value="RUB"></option>
                 <option value="USD"></option>
@@ -42,7 +42,16 @@ $IN_RUB["ETH"] = 331760.62;
 if (isset($_GET["cur_from"]) && isset($_GET["cur_to"]) && isset($_GET["amount"])) {
     $cur_from = $_GET["cur_from"];
     $cur_to = $_GET["cur_to"];
+    if(!isset($IN_RUB[$cur_from]) || !isset($IN_RUB[$cur_to])) {
+        print("Invalid currencies");
+        return;
+    }
+
     $amount = $_GET["amount"];
+    if(!is_numeric($amount)) {
+        printf("Invalid amount: %s", $amount);
+        return;
+    }
 
     /* check that currencies is valid */
     if(!isset($IN_RUB[$cur_from]) || !isset($IN_RUB[$cur_to])) {
