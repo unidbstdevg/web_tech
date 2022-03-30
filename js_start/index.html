@@ -1,0 +1,131 @@
+<h1>Задание 2</h1>
+<h2>А)</h2>
+<script>
+    function sum_func(a, b) {
+        return a + b;
+    }
+    function diff_func(a, b) {
+        return a - b;
+    }
+    function mult_func(a, b) {
+        return a * b;
+    }
+    function div_func(a, b) {
+        return a / b;
+    }
+
+
+    function call_func(func) {
+        a = parseInt(prompt("Number a:"));
+        b = parseInt(prompt("Number b:"));
+        res = func(a, b);
+
+        alert("Result: " + res);
+    }
+</script>
+
+<button onclick="call_func(sum_func);">Sum</button>
+<button onclick="call_func(diff_func);">Diff</button>
+<button onclick="call_func(mult_func);">Mult</button>
+<button onclick="call_func(div_func);">Div</button>
+
+
+
+
+
+<h2>Б)</h2>
+<script>
+    function mathOperation(arg1, arg2, oper) {
+        console.log(oper)
+        switch(oper) {
+            case "sum":
+                return sum_func(arg1, arg2);
+                break;
+            case "diff":
+                return diff_func(arg1, arg2);
+                break;
+            case "mult":
+                return mult_func(arg1, arg2);
+                break;
+            case "div":
+                return div_func(arg1, arg2);
+                break;
+
+            default:
+                alert("unreachable code reached");
+                return -1;
+        }
+    }
+
+    function exec_func() {
+        let frm = document.forms["math_operations"];
+        let a = parseInt(frm.a.value);
+        let b = parseInt(frm.b.value);
+        let oper = frm.oper.value;
+
+        let res = mathOperation(a, b, oper);
+        alert(res);
+    }
+</script>
+
+<form name="math_operations">
+    <input type="text" name="a">
+    <select name="oper">
+        <option>sum</option>
+        <option>diff</option>
+        <option>mult</option>
+        <option>div</option>
+    </select>
+    <input type="text" name="b">
+</form>
+
+<button onclick="exec_func();">Exec</button>
+
+<h1>Задание 3</h1>
+<script>
+    function print_primes() {
+        for(let i = 2; i < 100; i++) {
+            let prime = true;
+            for(let j = 2; j < i; j++){
+                if(i % j == 0) {
+                    prime = false;
+                    break;
+                }
+            }
+
+            if(prime) {
+                alert(i);
+            }
+        }
+    }
+</script>
+<button onclick="print_primes();">Print primes</button>
+
+<h1>Задание 4</h1>
+<script>
+    function test_arrays() {
+        var prices = [10, 1, 1, 1];
+        var count = [1, 2, 3, 4];
+
+        var res = 0;
+        for(let i = 0; i < prices.length; i++) {
+            res += prices[i] * count[i];
+        }
+
+        alert(res);
+    }
+</script>
+<button onclick="test_arrays();">Test array</button>
+
+<h1>Задание 5</h1>
+<script>
+    function create_chess() {
+        var c = document.getElementById("chess_board");
+        c.innerHTML = "";
+        var n = document.createElement("div");
+        n.innerText = "asdf";
+        c.append(n);
+    }
+</script>
+<button onclick="create_chess();">Create chess board</button>
+<div id="chess_board"></div>
