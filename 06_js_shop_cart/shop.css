@@ -1,0 +1,13 @@
+#catalog {
+    background-color: gray;;
+}
+#cart {
+    background-color: antiquewhite;
+}
+
+
+.product {
+    border: 2px solid red;
+    padding: 10px;
+    margin-bottom: 10px;
+}
