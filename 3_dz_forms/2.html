@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="2.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/67a40adea3.js" crossorigin="anonymous"></script>
+        <title>Asd</title>
+    </head>
+    <body>
+        <form>
+            <span>Step 1: Your details</span>
+            <fieldset>
+                <label>
+                    <span class="desc">Name</span>
+                    <input type="text" placeholder="First and last name">
+                </label>
+                <label>
+                    <span class="desc">Email</span>
+                    <input type="text" placeholder="example@domain.com">
+                </label>
+                <label>
+                    <span class="desc">Phone</span>
+                    <input type="text" placeholder="Eg. +4475000000000000">
+                </label>
+            </fieldset>
+            <span>Step 2: Delivery address</span>
+            <fieldset>
+                <label>
+                    <span class="desc">Address</span>
+                    <textarea type="textarea"></textarea>
+                </label>
+                <label>
+                    <span class="desc">Post code</span>
+                    <input type="text">
+                </label>
+                <label>
+                    <span class="desc">Country</span>
+                    <input type="text">
+                </label>
+            </fieldset>
+            <span>Step 3: Card details</span>
+            <fieldset>
+                <label id="card_type">
+                    <span class="desc">Card type</span>
+                    <label class="radio-btn">
+                        <input id="visa" type="radio" name="card_type" value="visa">
+                        <i class="fab fa-cc-visa"></i>
+                        VISA
+                    </label>
+                    <label class="radio-btn">
+                        <input type="radio" name="card_type" value="amex">
+                        <i class="fab fa-cc-amex"></i>
+                        AmEx
+                    </label>
+                    <label class="radio-btn">
+                        <input type="radio" name="card_type" value="mastercard">
+                        <i class="fab fa-cc-mastercard"></i>
+                        Mastercard
+                    </label>
+                </label>
+                <label>
+                    <span class="desc">Card number</span>
+                    <input type="text">
+                </label>
+                <label>
+                    <span class="desc">Security code</span>
+                    <input type="text">
+                </label>
+                <label>
+                    <span class="desc">Name on card</span>
+                    <input type="text" placeholder="Exact name as on the card">
+                </label>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="BUY IT!">
+            </fieldset>
+            <!-- <hr> -->
+            <!-- <fieldset> -->
+            <!--     <label class="comments"> -->
+            <!--         <span class="desc">comments</span> -->
+            <!--     </label> -->
+            <!-- </fieldset> -->
+            <!-- <fieldset class="submit"> -->
+            <!--     <input type="submit" value="SUBMIT"> -->
+            <!--     <span>or press enter</span> -->
+            <!-- </fieldset> -->
+
+        </form>
+    </body>
+</html>

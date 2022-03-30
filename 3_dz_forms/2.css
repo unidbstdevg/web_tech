@@ -1,0 +1,108 @@
+body {
+    background-color: #e6e6e6;
+    font-size: 0.85em;
+    margin: 0;
+}
+
+form {
+    background-color: #9cbd2d;
+    margin: 0 auto;
+    width: 450px;
+    padding: 20px 10px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+form > span {
+    font-weight: bold;
+    color: #3f4a17;
+    font-size: 1.1em;
+
+    padding: 5px;
+}
+
+
+fieldset {
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+fieldset label:not(.radio-btn) {
+    border: 2.25px solid #dfe8ba;
+    border-radius: 4px;
+    background-color: #b9cf6a;
+
+    padding: 8px;
+    margin-bottom: 2.5px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+fieldset label .radio-btn {
+    border: none;
+    margin-left: 12px;
+}
+
+label#card_type .desc {
+    flex-basis: 100%;
+    margin-bottom: 13px;
+}
+label#card_type {
+    padding-bottom: 15px;
+    justify-content: left;
+}
+
+
+input[type=text], textarea {
+    padding: 5px;
+    border: none;
+
+    margin-right: 60px;
+    border-radius: 3px;
+    width: 200px;
+}
+
+textarea {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+    font-style: italic;
+    font-weight: 400;
+}
+
+input[type=submit] {
+    background-color: #394312;
+    color: #f2f3f3;
+    font-size: 1.2em;
+    text-shadow: 0 2px 1.5px black;
+
+    border: none;
+    border-radius: 16px;
+
+    padding: 10px;
+    width: 125px;
+    height: 40px;
+    align-self: center;
+    margin-top: -6px;
+}
+
+.fab {
+    font-size: 1.1em;
+}
+.fa-cc-visa {
+    color: #4e6fab;
+}
+.fa-cc-mastercard {
+    color: #ac2632;
+}
