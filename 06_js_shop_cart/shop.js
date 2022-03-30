@@ -75,6 +75,9 @@ function redrawCart() {
 
         cart_elem.appendChild(product);
     }
+
+    var total_sum_elem = cart_createElemTotalCount();
+    cart_elem.appendChild(total_sum_elem);
 }
 
 function createProduct(item) {
@@ -183,4 +186,18 @@ function findItemInCart(id) {
         }
     }
     return null;
+}
+
+function cart_createElemTotalCount() {
+    var elem = document.createElement("div");
+
+    var count = 0;
+    var price_sum = 0;
+    for(cart_item of cart) {
+        count += cart_item.count;
+        price_sum += cart_item.price * cart_item.count;
+    }
+
+    elem.innerHTML = "Count: " + count + "<br>" + "Price sum: " + price_sum;
+    return elem;
 }
