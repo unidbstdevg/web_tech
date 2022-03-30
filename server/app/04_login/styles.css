@@ -1,0 +1,14 @@
+body {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    background-color: green;
+}
+
+footer {
+    margin-top: auto;
+}

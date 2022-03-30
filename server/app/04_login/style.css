@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+header, footer {
+    background-color: green;
+}
+
+footer {
+    margin-top: auto;
+}
