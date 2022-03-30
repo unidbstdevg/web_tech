@@ -38,6 +38,9 @@ header {
     margin-left: 33px;
     fill: #E8E8E8;
 }
+.header__box svg:hover {
+    fill: var(--orange-color);
+}
 
 .logo {
     background-color: #F1E4E6;
@@ -84,8 +87,32 @@ header {
     margin: 0 auto;
 } */
 
+footer {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 16px;
 
-
-svg:hover {
-    fill: var(--orange-color);
+    height: 79px;
 }
+.footer__box {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__box svg {
+    padding: 8px 10px;
+    background-color: white;
+    fill: black;
+}
+.footer__box svg:hover {
+    background-color: var(--orange-color);
+    fill: white;
+}
+
+
